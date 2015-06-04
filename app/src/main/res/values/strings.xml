@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Dhina Kaneeni</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="description">Latest computer Technology news in Tamizh</string>
     <string name="action_settings">Settings</string>
+    <string name="email">rajamanivinayagam@gmail.com</string>
+    <string name="openDrawer">Drawer Opened</string>
+    <string name="closeDrawer">Drawer Closed</string>
 </resources>
