@@ -1,11 +1,13 @@
-    <resources>
+<resources>
 
-        <!-- Base application theme. -->
-        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-            <item name="android:windowTranslucentStatus">true</item>
-            <item name="colorPrimary">@color/ColorPrimary</item>
-            <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
-            <!-- Customize your theme here. -->
-        </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.AppTheme">
+        <!-- Customize your theme here. -->
+    </style>
 
-    </resources>
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+    </style>
+
+</resources>

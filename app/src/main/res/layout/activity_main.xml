@@ -23,7 +23,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/description" />
+            android:text="@string/description"
+            android:id="@+id/textView1"/>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ListView>
 
     </LinearLayout>
 
@@ -36,6 +43,4 @@
         android:scrollbars="vertical">
 
     </android.support.v7.widget.RecyclerView>
-
-
 </android.support.v4.widget.DrawerLayout>

@@ -1,29 +1,34 @@
 package com.dreamerindia.rajamani.dhinakaneeni;
 
+import android.graphics.Typeface;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
-public class MainActivity extends ActionBarActivity {
+import com.mayuonline.tamilandroidunicodeutil.TamilUtil;
+
+public class MainActivity extends AppCompatActivity {
 
     //First We Declare Titles And Icons For Our Navigation Drawer List View
     //This Icons And Titles Are holded in an Array as you can see
 
-    String TITLES[] = {"Home", "Events", "Mail", "Shop", "Travel"};
+    String TITLES[] = {"முகப்பு", "நிகழ்வுகள்", "மின்னஞ்சல்", "கடை", "பயணம்"};
     int ICONS[] = {R.drawable.ic_home, R.drawable.ic_events, R.drawable.ic_mail, R.drawable.ic_shop, R.drawable.ic_travel};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
 
-    String NAME = "Rajamani Vinayagam";
-    String EMAIL = "rajamanivinayagam@gmail.com";
+    String NAME = "தின கணினி";
+    String EMAIL = "";
     int PROFILE = R.drawable.rj;
 
     private Toolbar toolbar;                              // Declaring the Toolbar Object
@@ -44,6 +49,11 @@ public class MainActivity extends ActionBarActivity {
     /* Assinging the toolbar object ot the view
     and setting the the Action bar to our toolbar
      */
+//        Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Bamini.ttf");
+//        TextView tv = (TextView)findViewById(R.id.textView1);
+//        tv.setTypeface(tf);
+//        String TSCIIString = TamilUtil.convertToTamil(TamilUtil.TSCII, "வணக்கம் அன்ரொயிட்");
+//        tv.setText(TSCIIString);
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
 
